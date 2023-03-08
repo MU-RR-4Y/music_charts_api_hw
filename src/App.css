@@ -28,6 +28,22 @@
   color: #61dafb;
 }
 
+li{
+  background-color: antiquewhite;
+  padding: 1rem;
+  margin: 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+ul{
+  width: 80%;
+  margin: auto;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +52,4 @@
     transform: rotate(360deg);
   }
 }
+

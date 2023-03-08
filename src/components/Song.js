@@ -1,19 +1,22 @@
 import React from "react";
 
-const Song= ({song, key})=>{
+const Song= ({song, index})=>{
 
 //    console.log(song)
    const songPreview = song['link'][1]['attributes']['href']
-   console.log(songPreview)
+   
     
     return(
         <li className="chart-entry">
             <p>
-            {song['title']['label']} <audio controls><source src={songPreview}/>
-            </audio>
+            {index}. {song['im:name']['label']} by {song['im:artist']['label']} 
             </p>
+            
+            <audio controls>
+                <source src={songPreview}/>
+            </audio>
 
-        
+                    
         </li>
     )
 }

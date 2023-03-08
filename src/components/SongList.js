@@ -5,9 +5,9 @@ const SongList = ({songs})=>{
 
      
      
-    const chartList = songs.map((song, index)=>{
-        // console.log(song)
-        return <Song key={index} song={song}/>;
+    const chartList = songs.map((song,index)=>{
+        console.log(song)
+        return <Song key={index} index={index+1} song={song}/>;
     });
     
     return(
